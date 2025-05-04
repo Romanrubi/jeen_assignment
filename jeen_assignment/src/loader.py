@@ -12,7 +12,7 @@ def load_document(file):
         print(f'Loading {file}')
         loader = Docx2txtLoader(file)
     else:
-        print("Document format is not supported!")
+        print("/n/nDocument format is not supported!/n/n")
         return None
     data = loader.load()
     print(f"Document {name} loaded successfully !")
