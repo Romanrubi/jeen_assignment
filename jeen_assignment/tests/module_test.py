@@ -3,10 +3,14 @@ from src.splitter import chunk_strategies
 from src.store import create_vector_store
 
 
-docs = load_document(r"C:\Users\Admin\Downloads\SpongeBob and Patrick's Krabby Patty Adventure.pdf")
+import os
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+data_path   = os.path.join(BASE_DIR,  'spongebob_and_patricks_story.pdf')
+
+
+docs = load_document(data_path)
 chunks = chunk_strategies(docs)
-
 vector_store = create_vector_store(
     chunks,
     persist_directory="vector_store"
