@@ -11,7 +11,7 @@ A lightweight Python module for semantic document processing:
 
 1. **Clone the repo**  
    ```bash
-   git clone https://github.com/yourusername/jeen_assignment.git
+   git clone [https://github.com/yourusername/jeen_assignment.git](https://github.com/Romanrubi/jeen_assignment.git)
    cd jeen_assignment
 
 2. **Download dependecies**
